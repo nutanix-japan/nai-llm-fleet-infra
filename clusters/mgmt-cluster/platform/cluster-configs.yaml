@@ -4,11 +4,11 @@ metadata:
   name: cluster-configs
 data:
   cluster_name: "mgmt-cluster"
-  environment: "prod"
+  environment: "non-prod"
   cluster_profile: "llm-management"
   nginx_ingress_version: "4.8.3"
   cert_manager_version: "v1.13.5"
-  cert_manager_issuer_name: "letsencrypt-issuer"
+  cert_manager_issuer_name: "selfsigned-cluster-issuer"
   milvus_version: "4.1.13"
   milvus_objects_bucket_name: "mgmt-cluster-milvus"
   kafka_version: "26.8.5"

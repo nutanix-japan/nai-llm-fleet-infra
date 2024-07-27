@@ -38,4 +38,25 @@ spec:
     remediation:
       retries: 3
     preserveValues: true
-
+  values:
+    extraConfig: |
+      ## required by milvus
+      num.partitions=1
+      auto.create.topics.enable=true
+      message.max.bytes=104857600
+      ## additional
+      producer.max.request.size=104857600
+      fetch.max.bytes=104857600
+      replica.fetch.response.max.bytes=104857600
+      replica.fetch.max.bytes=104857600
+      log.retention.check.interval.ms = 200000
+      log.retention.minutes=5
+    # ## Topic provisioning
+    # provisioning:
+    #   enabled: true
+    #   topics:
+    #   - name: OSSEvents
+    #     partitions: 1
+    #     replicationFactor: 1
+    #     config:
+    #       max.message.bytes: 104857600

@@ -29,4 +29,3 @@ data:
   opentelemetry_operator_version: "0.47.0"
   uptrace_version: "1.5.7"
   weave_gitops_version: "4.0.36"
-  jupyterhub_version: "3.1.0"
